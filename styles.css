@@ -1,7 +1,50 @@
-body{
-    background-image: linear-gradient( rgba(239,169,40,1), rgba(253,136,38,1));
+body {
+    background-image: linear-gradient(rgba(239,169,40,1), rgba(253,136,38,1));
     background-repeat: no-repeat;
 }
-.nav{
-   
+
+@font-face {
+    font-family: "Graffiti";
+    src: url(fonts/Urban\ Graffiti\ PERSONAL\ USE\ ONLY.ttf);
 }
+
+@font-face {
+    font-family: "anu";
+    src: url(fonts/Anuphan[wght].ttf);
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: anu;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+
+.nav-left a, .nav-right a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 10px;
+}
+
+.Mvp-video {
+    height: 80vh;
+}
+.projects {
+    background-image: url(imgs/projects\ bacground\ img.png);
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    height: 100vh;           /* Full viewport height */
+}
+
