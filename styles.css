@@ -6,12 +6,17 @@ body {
 @font-face {
     font-family: "Graffiti";
     src: url(fonts/Urban\ Graffiti\ PERSONAL\ USE\ ONLY.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
 }
 
 @font-face {
     font-family: "anu";
     src: url(fonts/Anuphan[wght].ttf);
 }
+
 
 .navbar {
     position: sticky;
@@ -37,9 +42,26 @@ body {
     gap: 10px;
 }
 
-.Mvp-video {
-    height: 80vh;
+.text{
+    font-family: "Graffiti",serif;
+    font-size: 4rem;
+    font-weight:900;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    height: 80vh;           /* Full viewport height */
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+ 
+
 }
+.text span{
+    font-size: 15rem;
+   
+    
+
+}
+
 .projects {
     background-image: url(imgs/projects\ bacground\ img.png);
     display: flex;
