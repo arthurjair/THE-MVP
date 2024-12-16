@@ -1,7 +1,11 @@
+
 body {
     background-image: linear-gradient(rgba(239,169,40,1), rgba(253,136,38,1));
     background-repeat: no-repeat;
-}
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
 
 @font-face {
     font-family: "Graffiti";
@@ -42,31 +46,33 @@ body {
     gap: 10px;
 }
 
-.text{
-    font-family: "Graffiti",serif;
-    font-size: 4rem;
-    font-weight:900;
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically */
-    height: 80vh;           /* Full viewport height */
-    -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
- 
-
-}
-.text span{
-    font-size: 15rem;
-   
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/sunbursts2.png);
+    background-repeat: no-repeat;
     
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.projects {
+.text-overlay {
+    font-family: "Graffiti";
+    margin-top: 10vw;
+    color: white; /* Text color */
+    font-size: 10vw; /* Adjust font size */
+    padding: 20px; /* Add padding around the text */
+    border-radius: 10px; /* Optional: rounded corners */
+    text-align: center; /* Center-align the text */
+}
+.projects{
     background-image: url(imgs/projects\ bacground\ img.png);
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically */
-    height: 100vh;           /* Full viewport height */
+    background-size: contain;
+}
+
+#projects-titleimg{
+    width: 50vw;;
 }
 
