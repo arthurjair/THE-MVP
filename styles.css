@@ -76,9 +76,7 @@ body {
 .text-overlay {
     position: absolute;
     display: block;
-   
     margin-top: 10vw;
-   
     font-family: "Graffiti";
     color: black; /* Text color */
     font-size: 20vw; /* Adjust font size */
@@ -97,9 +95,9 @@ body {
     display: block;
     font-family: "Graffiti";
     color: black; /* Text color */
-    font-size: 6vw; /* Adjust font size */
+    font-size: 7vw; /* Adjust font size */
     border-radius: 10px; /* Optional: rounded corners */
-    -webkit-text-stroke-width: 0.2vw;
+    -webkit-text-stroke-width: 0.3vw;
     -webkit-text-stroke-color: white;
     padding-top: 10vw;
     z-index: 10;
@@ -114,9 +112,12 @@ body {
     position: absolute;
     width: 6vw;
     right: 30vw;;
-    top: 15vw;
-  
-   
+    top: 15vw; 
+}
+#graffitistars{
+    position: absolute;
+    width: 25vw;
+    left: 12vw;
 }
 #paintsplash{
     width: 60vw;
