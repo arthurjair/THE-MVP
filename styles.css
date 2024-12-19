@@ -135,3 +135,27 @@ body {
     width: 50vw;;
 }
 
+.scroll{
+  
+    max-height: 25vw;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    
+}
+
+.scroll::-webkit-scrollbar{
+    width: 0;
+}
+
+/*scroll items size */
+
+.scroll .item{
+    min-width: 20vw;
+    height: 24vw;
+    line-height: 5.7vw;
+    border-radius: 0.5vw;
+    text-align: center;
+    background-color: red;
+    margin-right: 10vw;
+}
