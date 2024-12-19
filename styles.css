@@ -128,18 +128,21 @@ body {
 }
 .projects{
     background-image: url(imgs/projects\ bacground\ img.png);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-position: center -10vw;
 }
 
 #projects-titleimg{
-    width: 50vw;;
+    width: 25vw;;
 }
 
 .scroll{
-  
+   
+    margin-top: 10vw;
     max-height: 25vw;
     display: flex;
-    overflow-y: hidden;
     overflow-x: auto;
     
 }
@@ -151,6 +154,7 @@ body {
 /*scroll items size */
 
 .scroll .item{
+    
     min-width: 20vw;
     height: 24vw;
     line-height: 5.7vw;
@@ -158,4 +162,5 @@ body {
     text-align: center;
     background-color: red;
     margin-right: 10vw;
+    margin-left: 3vw;
 }
