@@ -128,25 +128,26 @@ body {
 }
 .projects{
     background-image: url(imgs/projects\ bacground\ img.png);
-   background-size: 100vw;
+   background-size: 99vw;
     background-repeat: no-repeat;
     background-position: center -10vw;
+    height: 45vw;
 }
 .project-title{
     display: flex;
     justify-content: center;
 }
 #projects-titleimg{
-   width: 65vw;
+   width: 70vw;
+   margin-top: 15vh;
    
 }
 
 .scroll{
-   
-    max-height: 25vw;
     display: flex;
     overflow-x: auto;
-    
+    background-color: #250E04;
+    padding: 5vw;
 }
 
 .scroll::-webkit-scrollbar{
@@ -162,11 +163,17 @@ body {
     line-height: 25vw;
     border-radius: .8vw;
     text-align: center;
-    background-color: red;
+    
     margin-right: 10vw;
     margin-left: 3vw;
 }
-.ABOUT-ME{
-    background-color: #250E04;
-    height: 90vh;
+
+#project-ynot{
+    width: 25vw;
+
 }
+#project-ynot{
+    stroke-width: 2vw;
+    stroke: white;
+}
+
