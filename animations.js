@@ -1,32 +1,41 @@
-/*chatgptd how to make mouse scroll automatically scroll instead of keypad */
 document.addEventListener('DOMContentLoaded', () => {
     const scrollContainer = document.querySelector('.scroll');
 
-    let scrollAmount = 0;
-    let isScrolling = false;
+    let isDragging = false;
+    let startX = 0;
+    let scrollStart = 0;
 
-    scrollContainer.addEventListener('wheel', (event) => {
-        if (event.deltaY !== 0) {
-            event.preventDefault();
-            scrollAmount += event.deltaY;
-
-            if (!isScrolling) {
-                isScrolling = true;
-                smoothScroll();
-            }
-        }
+    // Start dragging
+    scrollContainer.addEventListener('mousedown', (event) => {
+        isDragging = true;
+        startX = event.pageX - scrollContainer.offsetLeft;
+        scrollStart = scrollContainer.scrollLeft;
+        scrollContainer.style.cursor = 'grabbing';
     });
-/*for a smoother scroll since it kinda glitches */
-    function smoothScroll() {
-        if (Math.abs(scrollAmount) < 1) {
-            isScrolling = false;
-            scrollAmount = 0; // Reset when done
-            return;
-        }
 
-        scrollContainer.scrollLeft += scrollAmount * 0.2; // Adjust the speed by changing 0.2
-        scrollAmount *= 0.9; // Apply friction for smoother deceleration
+    // Dragging motion
+    scrollContainer.addEventListener('mousemove', (event) => {
+        if (!isDragging) return;
 
-        requestAnimationFrame(smoothScroll);
-    }
+        event.preventDefault(); // Prevent text selection
+        const x = event.pageX - scrollContainer.offsetLeft;
+        const walk = (x - startX) * 1; // Adjust the drag speed with this multiplier
+        scrollContainer.scrollLeft = scrollStart - walk;
+    });
+
+    // Stop dragging
+    scrollContainer.addEventListener('mouseup', () => {
+        isDragging = false;
+        scrollContainer.style.cursor = 'grab';
+    });
+
+    // Handle the case where the mouse leaves the container while dragging
+    scrollContainer.addEventListener('mouseleave', () => {
+        isDragging = false;
+        scrollContainer.style.cursor = 'grab';
+    });
+
+    // Set initial cursor style
+    scrollContainer.style.cursor = 'grab';
 });
+

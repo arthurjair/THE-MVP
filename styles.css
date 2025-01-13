@@ -145,7 +145,9 @@ body {
 
 .scroll{
     display: flex;
-    overflow-x: auto;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
     background-color: #250E04;
     padding: 5vw;
 }
@@ -157,23 +159,20 @@ body {
 /*scroll items size */
 
 .scroll .item{
-    
     min-width: 25vw;
     height: 25vw;
-    line-height: 25vw;
     border-radius: .8vw;
     text-align: center;
-    
+    line-height: 25vw;
     margin-right: 10vw;
     margin-left: 3vw;
 }
 
 #project-ynot{
     width: 25vw;
+    border: 6   px solid white;
+
 
 }
-#project-ynot{
-    stroke-width: 2vw;
-    stroke: white;
-}
+
 
