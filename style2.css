@@ -14,7 +14,7 @@ body,html{
 }
 
 @font-face {
-    font-family: "anu";
+    font-family: "anup";
     src: url(fonts/Anuphan[wght].ttf);
 }
 .navbar {
@@ -25,7 +25,7 @@ body,html{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    font-family: anu;
+    font-family: anup;
     font-weight: 600;
     font-size: 1.5vw;
     
@@ -70,20 +70,108 @@ body,html{
 }
 .project-title p{
     color: white;
-    font-family: anu;
+    font-family: anup;
     padding-left: 10vw;
 }
 .introduction-text h1{
+    padding-top: 50px;
     color: white;
-    font-family: anu;
-    font-size: 2vw;
-    padding-right: 10vw;
+    font-family: anup;
+    font-size: 1.8vw;
+    padding-left: 10vw;
+    width: 45vw;
 
 }
 #projecttitle-img{
     width: 40vw;
 }
-  
+.leftright-section{
+    display: flex;
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+}
+
+.section-title h1{
+    padding-left: 5vw;
+    font-family: anup;
+    color: white;
+    width: 30vw;
+    font-size: 2.5vw;
+
+}
+.section-text p{
+    color: white;
+    font-family: anup;
+    padding-left: 15vw;
+    width: 35vw;
+    font-weight: bold;
+    font-size: 1.8vw;
+}
+.research-section{
+    display: flex;
+}
+.research-text h1{
+    padding-left: 5vw;
+    font-family: anup;
+    color: white;
+    width: 30vw;
+    font-size: 2.5vw;
+    
+}
+.research-text p{
+    color: white;
+    font-family: anup;
+    padding-left: 5vw;
+    width: 35vw;
+    font-weight: 500;
+    font-size: 1.8vw;
+
+}
+ .research-text a{
+    text-decoration: ;
+    color: white;
+}
+.images-side{
+    padding-left: 10vw;
+
+}
+#set-images{
+    width: 35vw;
+    padding-bottom: 20px    ;
+}
+.field-research{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5vw;
+}
+.fieldresearch-text h1{
+    margin: 0 auto;
+    font-family: anup;
+    color: white;
+    width: 30vw;
+    font-size: 2.5vw;
+}
+.fieldresearch-text p{
+    margin: 0 auto;
+    color: white;
+    font-family: anup;
+    width: 35vw;
+    font-weight: 500;
+    font-size: 1.5vw;
+
+}
+.images-middle{
+    margin-top: 5vw;
+    
+}
+#setm-images{
+    width: 35vw;
+    
+
+}
+
 
    
     
