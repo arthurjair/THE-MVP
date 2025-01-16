@@ -28,6 +28,7 @@ body,html{
     font-family: anu;
     font-weight: 600;
     font-size: 1.5vw;
+    
 }
 
 .nav-left a, .nav-right a {
@@ -63,6 +64,17 @@ body,html{
 
 .hero-descp{
     background-color: whitesmoke;
+}
+.project-introduction{
+    
+}
+.project-title p{
+    color: white;
+}
+.introduction-text h1{
+    color: white;
+    font-family: anu;
+
 }
   
 
