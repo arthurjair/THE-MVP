@@ -18,7 +18,7 @@ body,html{
     src: url(fonts/Anuphan[wght].ttf);
 }
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 1000;
     display: flex;
@@ -66,15 +66,22 @@ body,html{
     background-color: whitesmoke;
 }
 .project-introduction{
-    
+    display: flex;
 }
 .project-title p{
     color: white;
+    font-family: anu;
+    padding-left: 10vw;
 }
 .introduction-text h1{
     color: white;
     font-family: anu;
+    font-size: 2vw;
+    padding-right: 10vw;
 
+}
+#projecttitle-img{
+    width: 40vw;
 }
   
 
