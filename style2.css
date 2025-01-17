@@ -17,6 +17,11 @@ body,html{
     font-family: "anup";
     src: url(fonts/Anuphan[wght].ttf);
 }
+@font-face {
+    font-family: "jam";
+    src: url(fonts/Jamstreet\ Graffiti.ttf);
+}
+
 .navbar {
     position: absolute;
     top: 0;
@@ -47,10 +52,11 @@ body,html{
 
 .Hero{
     background-color: white;
-    padding: 20px;
-    padding-top: 10vh;
+    padding: 5vw;
+    padding-top: 15vh;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -59,11 +65,26 @@ body,html{
     border: 2px solid black
 }
 #hero-image{
-    width: 65vw;
+    width: 80vw;
+    height: 30vw;
 }
-
+#scroll-icon{
+    width: 5vw;
+    margin-top: 1vw;
+}
 .hero-descp{
-    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.hero-descp h1{
+    font-family: jam;
+    font-size: 3.5vw;
+}
+.hero-descp h2{
+    font-family: jam;
+    font-size: 3.5vw;
+    rotate: 20deg;
 }
 .project-introduction{
     display: flex;
@@ -278,5 +299,145 @@ a{
     font-weight: 500;
     font-size: 1.5vw; 
 }
-   
+ol{
+    color: white;
+    font-family: anup;
+    padding-left: 5vw;
+    width: 35vw;
+    font-weight: 500;
+    font-size: 1.8vw;  
+}
+#finaldesign-text{
+    width: 55vw;
+}
+.finaldesign{
+display: flex;
+justify-content: center;
+}
+.mockup-image{
+    margin-top: -10vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#mockup-image{
+    margin: 0 auto;
+    width: 90vw;
+}
+button{
+    margin: 0 auto;
+    border: 2px solid ;
+    background-color: black;
+    border: 2px solid white;
+    margin-top: -20vh;
+    border-radius: 2px;
+
+}
+button:hover{
+    background-color: white;
+    transition: ease-in .1s;
+}
+button a:hover{
+    color: black;
+
+}
+button a{
+    font-family: anup;
+    font-weight: bold;
+    color: white;
+    font-size: 3vw;
+}
+
+.wordpress-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5vw;
+
+}
+.wordpress-text h1{
+    text-align: center;
+    font-family: anup;
+    color: white;
+    width: 50vw;
+    font-size: 2.5vw;
+
+}
+.wordpress-text p{
+    margin: 0 auto;
+    color: white;
+    font-family: anup;
+    width: 50vw;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5vw; 
+}
+.reflection-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+}
+.reflectiontext-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2vw;
+}
+.reflection-text h1{
+    text-align: center;
+    font-family: anup;
+    color: white;
+    width: 40vw;
+    font-size: 2.5vw;
+
+}
+.reflection-text p{
+    margin: 0 auto;
+    color: white;
+    font-family: anup;
+    width: 40vw;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5vw; 
+}
+#reflection-title{
+    width: 45vw;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+#logo2{
+    width: 20vw;
+}
+.left p{
+    font-family: Graffiti;
+    font-weight: bolder;
+    font-size: 5vw;
+    padding-left: 5vw;
+}
+.right p{
+    font-family: anup;
+    font-weight: bolder;
+    font-size: 3vw;
+    text-align: right;
+    padding-right: 5vw;
+}
+#arrows-img{
+    width: 5vw;
+    padding-right: 5vw;
     
+}
+
+.right a{
+    color: black;
+    font-family: Graffiti;
+    text-decoration: none;
+    font-size: 5vw;
+    font-weight: bolder;
+    
+}
+.right a:hover{
+
+}
