@@ -62,10 +62,14 @@ body,html{
 
 .hero-container{
     align-items: center;
-    border: 2px solid black
+   
 }
 #hero-image{
     width: 80vw;
+    height: 30vw;
+}
+#hero-image1{
+    width: 90vw;
     height: 30vw;
 }
 #scroll-icon{
@@ -154,6 +158,25 @@ body,html{
 .images-side{
     padding-left: 10vw;
 
+}
+.initialbrand-section{
+    display: flex;
+}
+.initialbrand-text h1{
+    padding-left: 5vw;
+    font-family: anup;
+    color: white;
+    width: 30vw;
+    font-size: 2.5vw;
+    
+}
+.initialbrand-text p{
+    color: white;
+    font-family: anup;
+    padding-left: 5vw;
+    width: 35vw;
+    font-weight: 500;
+    font-size: 1.8vw;
 }
 #set-images{
     width: 35vw;
