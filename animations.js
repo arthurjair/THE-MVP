@@ -39,3 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollContainer.style.cursor = 'grab';
 });
 
+
+document.getElementById("myBtn").addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
