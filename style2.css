@@ -114,15 +114,20 @@ body,html{
 .hero-container2{
     align-items: center;
     border: 2px solid black;
+    
    
 }
 #hero-image{
-    width: 80vw;
-    height: 30vw;
+    width: 88vw;
 }
 #hero-image1{
     width: 90vw;
     height: 30vw;
+}
+#hero-image3{
+    width: 90vw;
+    height: 70vh;
+    object-fit: cover;
 }
 #scroll-icon{
     width: 5vw;
@@ -144,6 +149,7 @@ body,html{
 }
 .project-introduction{
     display: flex;
+    margin-bottom: 5vw;
 }
 .project-title p{
     color: white;
@@ -235,8 +241,10 @@ body,html{
     padding-bottom: 20px;
 }
 #tall-images{
-    height:35vw;
-    
+    height:35vw;   
+}
+#ff-images{
+    width: 30vw; 
 }
 #brdy{
     width: 15vw;
