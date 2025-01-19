@@ -9,15 +9,21 @@ body {
     
 
 }
-@keyframes transitionIn{
-    from{
+/* 
+transitionIn:
+This makes an element fade in and slide up. 
+It starts off invisible (opacity 0) and 10px lower.
+And it ends fully visible (opacity 1) and in place. 
+*/
+@keyframes transitionIn {
+    from {
         opacity: 0;
-        transform:translateY(10px);
+        transform: translateY(10px);
     }
 
-    to{
+    to {
         opacity: 1;
-        transform:translateY(0);
+        transform: translateY(0);
     }
 }
 

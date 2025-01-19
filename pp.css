@@ -3,9 +3,6 @@ body{
     background-color:#EFE7DA;
     overflow-x: hidden;
     position: relative;
-   
-
-
 }
 .libre-baskerville-regular {
     font-family: "Libre Baskerville1", serif;
@@ -24,14 +21,12 @@ body{
     font-style: italic;
 }
 
-
-
 .lovers-quarrel-regular {
     font-family: "Lovers Quarrel", serif;
     font-weight: 400;
     font-style: normal;
 }
-.paperOverlay {
+.paperOverlay {/* texture for website*/
     position: absolute;
     top: 0;
     bottom: 0;
@@ -42,7 +37,7 @@ body{
     pointer-events: none;
     background-image: url(imgs/pp-noisetexture.svg);
 }
-.paperOverlay2 {
+.paperOverlay2 {/* texture for website*/
     position: absolute;
     top: 0;
     bottom: 0;
@@ -54,12 +49,9 @@ body{
     background-image: url(imgs/OVERLAY.png);
     opacity: 10%;
 }
-  
+
 
   
-nav{
-
-}
 #blueblob-img{
     width: 35vw;
 }
